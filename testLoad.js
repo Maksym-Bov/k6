@@ -2,14 +2,24 @@ import http from "k6/http";
 import {check, sleep} from 'k6'
 
 const  uri = "https://rctest-clone-1625730023-rc.expoplatform.com/newfront"
+const login = '/api/v1/login';
+const payload = JSON.stringify({
+    username: "Forest",
+    password: "Qwerty1@"
+});
 export const options={
     stages:[
-        { duration: "30s", target: 5 },
+        { duration: "10s", target: 1 },
         // { duration: "1m", target: 50 },
         // { duration: "20s", target: 0 },
 
     ]
 }
+const params = {
+    headers: {
+        'Content-Type': 'application/json',
+    },
+};
 
 export default function (){
     const  pages = [
@@ -25,4 +35,5 @@ export default function (){
         });
         sleep(1);
     }
+    const  postResp = http.post(uri + login, payload, params)
 }
