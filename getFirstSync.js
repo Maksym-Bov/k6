@@ -6,8 +6,11 @@ const route = '/profileappnew?getSynchronise=true&timestamp=0&event_id=145&place
 const authorization = `Basic YXBpX2Nvbm5lY3Q6MTIzZHNkQDE=`;
 
 export const options={
+    discardResponseBodies: false,
     stages:[
-        { duration: "1m", target: 50 }
+        { duration: "1m", target: 50 },
+        { duration: "1m", target: 50 },
+        { duration: "5m", target: 100 },
     ]
 }
 const params = {

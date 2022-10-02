@@ -13,7 +13,7 @@ export const options={
         { duration: "2m", target: 300 },
         { duration: "2m", target: 400 },
         { duration: "2m", target: 300 },
-        { duration: "2m", target: 500 },
+        { duration: "2m", target: 500 }
     ]
 }
 const params = {
