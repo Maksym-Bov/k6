@@ -7,11 +7,15 @@ const authorization = `Basic YXBpX2Nvbm5lY3Q6MTIzZHNkQDE=`;
 
 export const options={
     stages:[
-        { duration: "10s", target: 1 },
-        // { duration: "1m", target: 50 },
-        // { duration: "20s", target: 0 },
-
+        { duration: "1m", target: 50 },
+        { duration: "1m", target: 50 },
+        { duration: "5m", target: 100 },
+        { duration: "2m", target: 300 },
+        { duration: "2m", target: 400 },
+        { duration: "2m", target: 300 },
+        { duration: "2m", target: 500 },
     ]
+
 }
 const params = {
     headers: {

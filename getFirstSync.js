@@ -7,10 +7,7 @@ const authorization = `Basic YXBpX2Nvbm5lY3Q6MTIzZHNkQDE=`;
 
 export const options={
     stages:[
-        { duration: "10s", target: 1 },
-        // { duration: "1m", target: 50 },
-        // { duration: "20s", target: 0 },
-
+        { duration: "1m", target: 50 }
     ]
 }
 const params = {
