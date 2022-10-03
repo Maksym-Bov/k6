@@ -22,7 +22,8 @@ const params = {
         'Content-Type': 'application/x-www-form-urlencoded',
         'Authorization': authorization,
         'User-Agent': `Expoplatform apprc android Postman`,
-        'Accept': `*/*`
+        'Accept': `*/*`,
+
     }
 };
 
