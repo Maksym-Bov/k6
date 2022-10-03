@@ -3,15 +3,15 @@ import {sleep} from 'k6'
 
 const  uri = "https://api-apprc.expoplatform.com";
 
-const pages = ['/profileappnew?getSynchronise=true&timestamp=1648819273&event_id=145&place_id=62&lang=en',
-'/visitors?getSynchronise=true&timestamp=1648819273&event_id=145&lang=en'];
+const pages = ['/profileappnew?getSynchronise=true&timestamp=1664474545&event_id=145&place_id=62&lang=en',
+'/visitors?getSynchronise=true&timestamp=1664474545&event_id=145&lang=en'];
 
 const authorization = `Basic YXBpX2Nvbm5lY3Q6MTIzZHNkQDE=`;
 
 export const options={
     discardResponseBodies: true,
     stages:[
-        { duration: "30s", target: 10 },
+        { duration: "30s", target: 1500 },
         { duration: "30s", target: 2000 },
         { duration: "1m", target: 5000 },
         { duration: "2m", target: 6000 },
