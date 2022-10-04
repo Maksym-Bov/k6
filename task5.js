@@ -9,13 +9,13 @@ const login = '/oauth/authorize';
 
 export const options={
     stages:[
-        { duration: "1m", target: 50 },
-        { duration: "1m", target: 50 },
-        { duration: "5m", target: 100 },
-        { duration: "2m", target: 300 },
-        { duration: "2m", target: 400 },
-        { duration: "2m", target: 300 },
-        { duration: "2m", target: 500 },
+        { duration: "30s", target: 1500 },
+        { duration: "30s", target: 2000 },
+        { duration: "1m", target: 5000 },
+        { duration: "2m", target: 6000 },
+        { duration: "2m", target: 5000 },
+        { duration: "2m", target: 6000 },
+        { duration: "2m", target: 7000 },
     ]
 }
 const params = {
