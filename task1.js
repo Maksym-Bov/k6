@@ -32,7 +32,7 @@ const params = {
 export default function (){
     for(const page of pages) {
         const  res = http.get(uri + page,params);
-        sleep(1);
+        sleep(10);
     }
 
 }
