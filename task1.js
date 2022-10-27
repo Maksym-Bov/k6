@@ -11,20 +11,18 @@ const authorization = `Basic YXBpX2Nvbm5lY3Q6MTIzZHNkQDE=`;
 export const options={
     discardResponseBodies: true,
     stages:[
-        { duration: "30s", target: 1500 },
-        { duration: "30s", target: 2000 },
-        { duration: "1m", target: 3000 },
-        { duration: "2m", target: 4000 },
-        { duration: "2m", target: 3000 },
-        { duration: "2m", target: 4000 },
-        { duration: "2m", target: 5000 },
+        { duration: "30s", target: 150 },
+        { duration: "30s", target: 200 },
+        { duration: "1m", target: 300 },
+        { duration: "2m", target: 1000 },
+        { duration: "2m", target: 1000 },
+        { duration: "2m", target: 300 },
+        { duration: "2m", target: 1000 },
     ]
 }
 const params = {
     headers: {
         'Authorization': authorization,
-        'Accept-encoding':`gzip`,
-
     },
     timeout: "4m"
 };

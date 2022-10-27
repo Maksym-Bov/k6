@@ -16,9 +16,8 @@ const authorization = `Basic YXBpX2Nvbm5lY3Q6MTIzZHNkQDE=`;
 export const options={
     discardResponseBodies: true,
     stages:[
-        { duration: "1m", target: 5 },
-        { duration: "1m", target: 10 },
-        { duration: "4m", target: 20 },
+        { duration: "10m", target: 1000 },
+
     ]
 }
 const paramsGET = {
